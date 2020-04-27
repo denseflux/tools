@@ -15,17 +15,17 @@ New Tool   (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.cre
 </span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
 </span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
 </span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
-</span><span style=display:block;width:100%;background-color:#3c3d38><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
-</span></span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
 </span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
 </span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
 </span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
 </span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">12
 </span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">13
-</span><span style=display:block;width:100%;background-color:#3c3d38><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">14
-</span></span><span style=display:block;width:100%;background-color:#3c3d38><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">15
-</span></span><span style=display:block;width:100%;background-color:#3c3d38><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">16
-</span></span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">17
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">14
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">15
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">16
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">17
 </span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">18
 </span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">19
 </span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">20
@@ -35,31 +35,33 @@ New Tool   (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.cre
 </span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">24
 </span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">25
 </span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">26
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">27
 </span></code></pre></td><td style=vertical-align:top;padding:0;margin:0;border:0;width:100%><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=color:#f92672>---</span>
-<span style=color:#a6e22e>title</span>: <span style=color:#e6db74>&#34;{{ replace .Name &#34;</span><span style=color:#f92672>-</span><span style=color:#e6db74>&#34; &#34;</span> <span style=color:#e6db74>&#34; | title }}&#34;</span>
+<span style=color:#a6e22e>title</span>: <span style=color:#960050;background-color:#1e0010>#</span> <span style=color:#a6e22e>Name</span> <span style=color:#a6e22e>of</span> <span style=color:#a6e22e>the</span> <span style=color:#a6e22e>tool</span>
 <span style=color:#a6e22e>images</span>: <span style=color:#960050;background-color:#1e0010>#</span> <span style=color:#a6e22e>Create</span> <span style=color:#a6e22e>a</span> <span style=color:#a6e22e>folder</span> <span style=color:#a6e22e>in</span> <span style=color:#f92672>/</span><span style=color:#a6e22e>static</span><span style=color:#f92672>/</span><span style=color:#a6e22e>images</span><span style=color:#f92672>/</span><span style=color:#a6e22e>tools</span> <span style=color:#a6e22e>that</span> <span style=color:#a6e22e>has</span> <span style=color:#a6e22e>the</span> <span style=color:#a6e22e>same</span> <span style=color:#a6e22e>name</span> <span style=color:#a6e22e>as</span> <span style=color:#a6e22e>this</span> <span style=color:#a6e22e>current</span> <span style=color:#a6e22e>markdown</span> <span style=color:#a6e22e>file</span> <span style=color:#a6e22e>and</span> <span style=color:#a6e22e>place</span> <span style=color:#a6e22e>the</span> <span style=color:#a6e22e>images</span> <span style=color:#a6e22e>there</span>. <span style=color:#a6e22e>We</span> <span style=color:#a6e22e>only</span> <span style=color:#a6e22e>need</span> <span style=color:#a6e22e>the</span> <span style=color:#a6e22e>file</span> <span style=color:#a6e22e>name</span> <span style=color:#a6e22e>here</span>. <span style=color:#a6e22e>If</span> <span style=color:#a6e22e>this</span> <span style=color:#a6e22e>is</span> <span style=color:#a6e22e>not</span> <span style=color:#a6e22e>clear</span>, <span style=color:#a6e22e>please</span> <span style=color:#a6e22e>refer</span> <span style=color:#a6e22e>to</span> <span style=color:#a6e22e>existing</span> <span style=color:#a6e22e>tools</span> <span style=color:#a6e22e>as</span> <span style=color:#a6e22e>references</span>.
-  <span style=color:#f92672>-</span> <span style=color:#a6e22e>path</span>:
+  <span style=color:#f92672>-</span> <span style=color:#a6e22e>path</span>: <span style=color:#960050;background-color:#1e0010>#</span> <span style=color:#a6e22e>only</span> <span style=color:#a6e22e>the</span> <span style=color:#a6e22e>file</span> <span style=color:#a6e22e>name</span>
 <span style=color:#a6e22e>categories</span>:
-  <span style=color:#f92672>-</span> <span style=color:#e6db74>&#34;&#34;</span>
+  <span style=color:#f92672>-</span>
 <span style=color:#a6e22e>tags</span>:
-<span style=display:block;width:100%;background-color:#3c3d38>  <span style=color:#f92672>-</span> <span style=color:#e6db74>&#34;&#34;</span>
-</span><span style=color:#a6e22e>links</span>:
+  <span style=color:#f92672>-</span>
+<span style=color:#a6e22e>links</span>: <span style=color:#960050;background-color:#1e0010>#</span> <span style=color:#a6e22e>Links</span> <span style=color:#a6e22e>related</span> <span style=color:#a6e22e>to</span> <span style=color:#a6e22e>the</span> <span style=color:#a6e22e>tool</span>
   <span style=color:#f92672>-</span> <span style=color:#a6e22e>name</span>:
     <span style=color:#a6e22e>link</span>:
-<span style=color:#a6e22e>summary</span>: <span style=color:#e6db74>&#34;&#34;</span>
-<span style=color:#a6e22e>features</span>:
+<span style=color:#a6e22e>summary</span>:
+<span style=color:#a6e22e>features</span>: <span style=color:#960050;background-color:#1e0010>#</span> <span style=color:#a6e22e>list</span> <span style=color:#a6e22e>of</span> <span style=color:#a6e22e>features</span>
+  <span style=color:#f92672>-</span>
+<span style=color:#a6e22e>platforms</span>: <span style=color:#960050;background-color:#1e0010>#</span> <span style=color:#a6e22e>the</span> <span style=color:#a6e22e>platforms</span> <span style=color:#a6e22e>that</span> <span style=color:#a6e22e>the</span> <span style=color:#a6e22e>tool</span> <span style=color:#a6e22e>runs</span> <span style=color:#a6e22e>on</span>. <span style=color:#a6e22e>e</span>.<span style=color:#a6e22e>g</span>., <span style=color:#a6e22e>Web</span>, <span style=color:#a6e22e>Min</span>, <span style=color:#a6e22e>Mac</span>, <span style=color:#a6e22e>Android</span>, <span style=color:#a6e22e>iOS</span>
   <span style=color:#f92672>-</span> <span style=color:#e6db74>&#34;&#34;</span>
-<span style=display:block;width:100%;background-color:#3c3d38><span style=color:#a6e22e>platforms</span>:
-</span><span style=display:block;width:100%;background-color:#3c3d38>  <span style=color:#f92672>-</span> <span style=color:#e6db74>&#34;&#34;</span>
-</span><span style=display:block;width:100%;background-color:#3c3d38><span style=color:#a6e22e>fields</span>:
-</span>  <span style=color:#f92672>-</span> <span style=color:#e6db74>&#34;&#34;</span>
-<span style=color:#a6e22e>plans</span>:
+<span style=color:#a6e22e>fields</span>: <span style=color:#960050;background-color:#1e0010>#</span> <span style=color:#a6e22e>the</span> <span style=color:#a6e22e>field</span> <span style=color:#a6e22e>of</span> <span style=color:#a6e22e>science</span> <span style=color:#a6e22e>that</span> <span style=color:#a6e22e>this</span> <span style=color:#a6e22e>tool</span> <span style=color:#a6e22e>is</span> <span style=color:#a6e22e>mostly</span> <span style=color:#a6e22e>used</span> <span style=color:#a6e22e>in</span>
+  <span style=color:#f92672>-</span> <span style=color:#e6db74>&#34;&#34;</span>
+<span style=color:#a6e22e>plans</span>: <span style=color:#960050;background-color:#1e0010>#</span> <span style=color:#a6e22e>fees</span>
   <span style=color:#f92672>-</span> <span style=color:#a6e22e>name</span>:
     <span style=color:#a6e22e>description</span>:
-<span style=color:#a6e22e>authors</span>:
+<span style=color:#a6e22e>makers</span>: <span style=color:#960050;background-color:#1e0010>#</span> <span style=color:#a6e22e>the</span> <span style=color:#a6e22e>makers</span> <span style=color:#a6e22e>of</span> <span style=color:#a6e22e>the</span> <span style=color:#a6e22e>tool</span>
   <span style=color:#f92672>-</span> <span style=color:#a6e22e>name</span>:
     <span style=color:#a6e22e>description</span>:
-<span style=color:#a6e22e>date</span>: {{ .<span style=color:#a6e22e>Date</span> }}
+<span style=color:#a6e22e>author</span>:      <span style=color:#960050;background-color:#1e0010>#</span> <span style=color:#a6e22e>the</span> <span style=color:#a6e22e>person</span> <span style=color:#a6e22e>who</span> <span style=color:#a6e22e>submitted</span> <span style=color:#a6e22e>this</span> <span style=color:#a6e22e>tool</span> <span style=color:#a6e22e>to</span> <span style=color:#a6e22e>KausalFlow</span>
+<span style=color:#a6e22e>date</span>:   <span style=color:#960050;background-color:#1e0010>#</span> <span style=color:#a6e22e>current</span> <span style=color:#a6e22e>date</span> <span style=color:#a6e22e>in</span> <span style=color:#a6e22e>iso</span><span style=color:#f92672>-</span><span style=color:#a6e22e>format</span>
 <span style=color:#a6e22e>draft</span>: <span style=color:#66d9ef>false</span>
 <span style=color:#f92672>---</span></code></pre></td></tr></table></div></div></li><li>Fill in the fields in the new file. If it is unclear what to type in, please refer to existing tools inside <code>content/tools/</code>.</li><li>Commit, Push, and Create PR on GitHub.</li></ol></div><br></div></section></div></div></main></main><footer><footer class=footer><div class=container><div class="content has-text-centered"><p>Created and maintained by <a href=https://kausalflow.com>KausalFlow</a>.
 Acknowledgement: <a href=https://gohugo.io/>Hugo</a>,
