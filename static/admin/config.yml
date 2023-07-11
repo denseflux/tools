@@ -1,0 +1,95 @@
+backend:
+#  name: test-repo
+#  name: proxy
+#  proxy_url: https://denseflux-orange-space-fishstick-g5q476jwxrhvgpx-8081.preview.app.github.dev/api/v1
+  name: github
+  repo: denseflux/tools
+  branch: master # Branch to update (optional; defaults to master)
+  base_url: https://denseflux-orange-space-fishstick-g5q476jwxrhvgpx-3000.preview.app.github.dev/
+
+#local-backend: true
+local-backend:
+  url: http://localhost:8081/api/v1
+  allowed_hosts: ['localhost','0.0.0.0','denseflux-orange-space-fishstick-g5q476jwxrhvgpx-8081.preview.app.github.dev','https://denseflux-orange-space-fishstick-g5q476jwxrhvgpx-8081.preview.app.github.dev']
+
+collections:
+  - name: "tools"
+    label: "Tools"
+    label_singular: "Tool"
+    folder: "content/tools"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - label: "Author"
+        name: "author" 
+        widget: relation
+        collection: "author"
+        search_fields: ["title"]
+        value_field: "title"
+        display_field: ["title"]
+      - label: "Images"
+        name: "images"
+        widget: "list"
+        required: false
+        fields: 
+          - {label: "Image", name: "path", widget: image}
+      - {label: "Categories", name: categories, widget: list , required: false}
+      - label: "Tags"
+        collection: "tools"
+        name: tags
+        widget: relation
+        multiple: true
+        value_field: "{{tags.0.*}}"
+        search_fields: ["tags.0.*"]
+        display_field: ["tags.0.*"]
+        required: false
+      - {label: "Summary", name: "summary", widget: "markdown", required: false}
+      - label: "Platforms"
+        label_singular: "Platform"
+        name: platforms
+        widget: relation
+        required: false
+        multiple: true
+        collection: tools
+        value_field: "{{platform.*}}"
+        search_fields: ["platform.*"]
+        display_field: ["platform.*"]
+        field: {name: "platform", widget: string}
+      - label: "Features"
+        label_singular: "Feature" 
+        name: "features" 
+        widget: list 
+        required: false
+        collapsed: false
+        field: {name: "feature", widget: string}
+      - label: "Fields"
+        name: fields
+        widget: relation
+        required: false
+        multiple: true
+        collection: tools
+        value_field: "{{fields}}"
+        search_fields: ["fields.0.*"]
+        display_field: ["fields.0.*"]
+      - label: "Links"
+        name: "links"
+        widget: "list"
+        required: false
+        collapsed: false
+        fields:
+          - {label: "Link Description", name: "name"}
+          - {label: "URL", name: "link", default: "https://"}
+
+  - name: "author"
+    label: "Author"
+    folder: "content/author"
+    create: true
+    fields:
+      - {name: title}
+      - {name: description, widget: markdown}
+      - {name: website}
+
+# These lines should *not* be indented
+media_folder: "static/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/public/uploads" # The src attribute for uploaded media will begin with /images/uploads
