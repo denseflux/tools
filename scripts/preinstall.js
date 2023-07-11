@@ -1,5 +1,4 @@
 const package = require('../package.json');
-const YAML = require('yaml');
 const fs = require('fs');
 
 const {CODESPACE_NAME = 'test', GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN='test', GITHUB_REPOSITORY='test'} = process.env;
