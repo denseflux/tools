@@ -1,8 +1,8 @@
 backend:
   name: github
-  repo: ${GITHUB_REPOSITORY}
+  repo: denseflux/tools
   branch: master # Branch to update (optional; defaults to master)
-  base_url: https://${CODESPACE_NAME}-3000.${GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN}/
+  base_url: https://denseflux-orange-space-fishstick-g5q476jwxrhvgpx-3000.preview.app.github.dev/
 
 collections:
   - name: "tools"

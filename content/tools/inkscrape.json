@@ -1,0 +1,11 @@
+{
+    "title": "Inkscrape",
+    "summary": "<h2>Inkscape</h2>\n<p class=\"summary\">Inkscape is a Free and open source&nbsp;<a href=\"http://en.wikipedia.org/wiki/Comparison_of_vector_graphics_editors\">vector graphics editor</a>&nbsp;for GNU/Linux, Windows and macOS. It offers a rich set of features and is widely used for both artistic and technical illustrations such as cartoons, clip art, logos, typography, diagramming and flowcharting. It uses&nbsp;<a href=\"http://en.wikipedia.org/wiki/Vector_graphics\">vector graphics</a>&nbsp;to allow for sharp printouts and renderings at unlimited resolution and is not bound to a fixed number of pixels like raster graphics. Inkscape uses the standardized&nbsp;<a href=\"http://www.w3.org/Graphics/SVG/\">SVG file format</a>&nbsp;as its main format, which is supported by many other applications including web browsers.</p>\n<p>It can import and export various file formats, including SVG, AI, EPS, PDF, PS and PNG. It has a&nbsp;<a href=\"https://inkscape.org/about/features/\">comprehensive feature set</a>, a&nbsp;<a href=\"https://inkscape.org/about/screenshots/\">simple interface</a>, multi-lingual support and is designed to be extensible; users can customize Inkscape's functionality with&nbsp;<a href=\"https://inkscape.org/gallery/=extension/\">add-ons</a>.</p>\n<h2>What does it work on?</h2>\n<div class=\"iconBullet\"><i class=\"fa fa-windows\" aria-hidden=\"true\">&nbsp;</i>Windows</div>\n<div class=\"iconBullet\"><i class=\"fa fa-apple\" aria-hidden=\"true\">&nbsp;</i>macOSX</div>\n<div class=\"iconBullet\"><i class=\"fa fa-linux\" aria-hidden=\"true\">&nbsp;</i>Linux</div>\n<h2>How to get it</h2>\n<p>Can be downloaded from the <a href=\"https://inkscape.org/\">Inkscape website.</a></p>",
+    "date": 1661450028886,
+    "slug": "inkscape",
+    "categories": [
+        "Design",
+        "Photo Editing"
+    ],
+    "author": "Patrick Ryan"
+}
